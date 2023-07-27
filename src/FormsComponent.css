@@ -1,0 +1,21 @@
+.form-container {
+    margin-top: 70px;
+  }
+  
+  .form-toggle {
+    margin-bottom: 20px;
+  }
+  
+  .forms-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .medium-input {
+    /* Add your input field styles here */
+  }
+  
+  .btn {
+    /* Add your button styles here */
+  }
+  

@@ -21,12 +21,11 @@
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
+    #ba2940 0.89%,
+    #ab2b4c 17.23%,
+    #8d2e55 42.04%,
+    #753261 55.12%,
+    #60346A 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -137,4 +136,75 @@
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(300px);
+}
+
+.promoVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+/* Forms Component Styles */
+.medium-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-form .row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form .col-md-12 {
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Additional Styling for Forms Component */
+.form-container {
+  margin-top: 70px;
+}
+
+.form-toggle {
+  margin-bottom: 20px;
+}
+
+/* Styling for B2B Form Fields */
+#companyName {
+  display: ${isBusiness ? 'block' : 'none'};
+}
+
+
+/* In your style module (e.g., styles.module.css) */
+.gradient-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #ba2940 0.89%,
+    #ab2b4c 17.23%,
+    #8d2e55 42.04%,
+    #753261 55.12%,
+    #60346A 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

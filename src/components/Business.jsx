@@ -2,6 +2,7 @@ import React from 'react'
 import { features } from '../constants'
 import styles, { layout } from '../style'
 import Button from './Button'
+import { Link } from 'react-router-dom';
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? 'mb-6' : 'mb-0'} feature-card`}>
@@ -27,15 +28,26 @@ const Business = () => {
   return (
     <section id='features' className={layout.section}>
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>You do the business, <br className='sm:block hidden'/>we'll handle the money.</h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          With the right credit card, 
-          you can improve your financial life by building credit,
-          earning rewards and saving money.
-          But with hundreds of credit cards on the market.
+          I am not going to like all of the suggestions.
         </p>
-        <Button styles='mt-10'/>
+        <h2 className={styles.heading3}>It is personalized by your preferences</h2>
+        
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+          What if it is not in my area?
+        </p>
+        <h2 className={styles.heading3}>It is location-based</h2>
+
+        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+          What’s going to make me do it?
+        </p>
+        <h2 className={styles.heading3}>Our app confirms your location. If you don't commit, you get an L.</h2>
+        <Link to="/FormsComponent">
+          <Button styles='mt-10' />
+        </Link>
       </div>
+
+      {/*FEATURES */}
       <div className={`${layout.sectionImg} flex-col`}>
         {features.map((feature, index) => (
           <FeatureCard key={feature.id} {...feature} index={index}/>
@@ -45,4 +57,4 @@ const Business = () => {
   )
 }
 
-export default Business
+export default Business;

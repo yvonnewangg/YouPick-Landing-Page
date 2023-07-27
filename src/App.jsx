@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 import { 
   Billing, 
   Business, 
@@ -11,6 +12,7 @@ import {
   Stats, 
   Testimonials 
 } from './components'
+import FormsComponent from './components/FormsComponent'
 import styles from './style'
 
 const App = () => {
@@ -23,19 +25,16 @@ const App = () => {
       </div>
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Hero/>      
+          
+          <Hero />      
         </div>
       </div>
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Stats/>
+          <FormsComponent />
           <Business/>
-          <Billing/>
-          <CardDeal/>
           <Testimonials/>
-          <Clients/>
-          <CTA/>
-          <Footer/>     
+          {/* <Features /> */}
         </div>
       </div>
     </div>

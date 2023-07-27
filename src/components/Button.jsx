@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Button = ({ styles }) => {
   return (
@@ -7,5 +8,15 @@ const Button = ({ styles }) => {
     </button>
   )
 }
+
+// const Button = () => {
+//   return (
+//     <Link to="/form"> {/* This link should point to the URL of the form page */}
+//       <button style={{ padding: '10px 20px', fontSize: '16px', backgroundColor: 'black', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+//         Want to market your business?
+//       </button>
+//     </Link>
+//   );
+// };
 
 export default Button
